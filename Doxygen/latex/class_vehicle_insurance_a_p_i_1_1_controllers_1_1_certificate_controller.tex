@@ -1,0 +1,103 @@
+\doxysection{Vehicle\+Insurance\+API.\+Controllers.\+Certificate\+Controller Class Reference}
+\hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller}{}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller}\index{VehicleInsuranceAPI.Controllers.CertificateController@{VehicleInsuranceAPI.Controllers.CertificateController}}
+Inheritance diagram for Vehicle\+Insurance\+API.\+Controllers.\+Certificate\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_adb96c86245d06574281755b1ae8fa387}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_adb96c86245d06574281755b1ae8fa387} 
+{\bfseries Certificate\+Controller} (\mbox{\hyperlink{class_data_access_1_1_models_1_1_vip_db_context}{Vip\+Db\+Context}} db)
+\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a7b315e3422d4f93d6f4caf9448bffdec}{Get\+Certificates}} (int id)
+\begin{DoxyCompactList}\small\item\em Get certificates of a customer. \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a09d8974f18bd71a305bd464f12d837cf}{Get\+All\+Certificates}} ()
+\begin{DoxyCompactList}\small\item\em Get all certificates -\/ Admin page. \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_aa5c028d2fb40196eb5582265582ca70a}{Get\+Certificate\+Detail}} (int Cert\+Id)
+\begin{DoxyCompactList}\small\item\em Get Certificate Detail Based on Certificate Id -\/ Admin Page. \end{DoxyCompactList}\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a2c50cab2f7c95c8e6684c35afef4cbf6}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a2c50cab2f7c95c8e6684c35afef4cbf6} 
+IAction\+Result {\bfseries Create\+Certificate} (\mbox{\hyperlink{class_data_access_1_1_models_1_1_certificate}{Certificate}} model)
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a3d7bb14b86e9520ab1321d883c6ffee9}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a3d7bb14b86e9520ab1321d883c6ffee9} 
+IAction\+Result {\bfseries Update\+Certificate} (\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_update_cert_model}{Update\+Cert\+Model}} model)
+\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a94569c95c137b6350260d14ac0264824}{Get\+Claim\+Detail}} (int policy\+No)
+\begin{DoxyCompactList}\small\item\em Get Claim Detail Based on Certificate Id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a09d8974f18bd71a305bd464f12d837cf}\index{VehicleInsuranceAPI.Controllers.CertificateController@{VehicleInsuranceAPI.Controllers.CertificateController}!GetAllCertificates@{GetAllCertificates}}
+\index{GetAllCertificates@{GetAllCertificates}!VehicleInsuranceAPI.Controllers.CertificateController@{VehicleInsuranceAPI.Controllers.CertificateController}}
+\doxysubsubsection{\texorpdfstring{GetAllCertificates()}{GetAllCertificates()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a09d8974f18bd71a305bd464f12d837cf} 
+IAction\+Result Vehicle\+Insurance\+API.\+Controllers.\+Certificate\+Controller.\+Get\+All\+Certificates (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get all certificates -\/ Admin page. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_aa5c028d2fb40196eb5582265582ca70a}\index{VehicleInsuranceAPI.Controllers.CertificateController@{VehicleInsuranceAPI.Controllers.CertificateController}!GetCertificateDetail@{GetCertificateDetail}}
+\index{GetCertificateDetail@{GetCertificateDetail}!VehicleInsuranceAPI.Controllers.CertificateController@{VehicleInsuranceAPI.Controllers.CertificateController}}
+\doxysubsubsection{\texorpdfstring{GetCertificateDetail()}{GetCertificateDetail()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_aa5c028d2fb40196eb5582265582ca70a} 
+IAction\+Result Vehicle\+Insurance\+API.\+Controllers.\+Certificate\+Controller.\+Get\+Certificate\+Detail (\begin{DoxyParamCaption}\item[{int}]{Cert\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Certificate Detail Based on Certificate Id -\/ Admin Page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Cert\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a7b315e3422d4f93d6f4caf9448bffdec}\index{VehicleInsuranceAPI.Controllers.CertificateController@{VehicleInsuranceAPI.Controllers.CertificateController}!GetCertificates@{GetCertificates}}
+\index{GetCertificates@{GetCertificates}!VehicleInsuranceAPI.Controllers.CertificateController@{VehicleInsuranceAPI.Controllers.CertificateController}}
+\doxysubsubsection{\texorpdfstring{GetCertificates()}{GetCertificates()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a7b315e3422d4f93d6f4caf9448bffdec} 
+IAction\+Result Vehicle\+Insurance\+API.\+Controllers.\+Certificate\+Controller.\+Get\+Certificates (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get certificates of a customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a94569c95c137b6350260d14ac0264824}\index{VehicleInsuranceAPI.Controllers.CertificateController@{VehicleInsuranceAPI.Controllers.CertificateController}!GetClaimDetail@{GetClaimDetail}}
+\index{GetClaimDetail@{GetClaimDetail}!VehicleInsuranceAPI.Controllers.CertificateController@{VehicleInsuranceAPI.Controllers.CertificateController}}
+\doxysubsubsection{\texorpdfstring{GetClaimDetail()}{GetClaimDetail()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_certificate_controller_a94569c95c137b6350260d14ac0264824} 
+IAction\+Result Vehicle\+Insurance\+API.\+Controllers.\+Certificate\+Controller.\+Get\+Claim\+Detail (\begin{DoxyParamCaption}\item[{int}]{policy\+No}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Claim Detail Based on Certificate Id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em policy\+No} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vehicle\+Insurance\+API/\+Controllers/Certificate\+Controller.\+cs\end{DoxyCompactItemize}

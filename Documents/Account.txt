@@ -1,0 +1,13 @@
+Customer 1:
+ + username: angelasmith@gmail.com
+ + password: angela@smith
+Customer 2:
+ + username: toan@gmail.com
+ + password: abc@123
+Customer 3:
+ + username: ngannnk@gmail.com
+ + password: abc@123
+
+Employee 1:
+ + username: admin
+ + password: admin

@@ -1,0 +1,163 @@
+\doxysection{Vehicle\+Insurance\+API.\+Controllers.\+Bill\+Controller Class Reference}
+\hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller}{}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller}\index{VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}}
+
+
+Handles HTTP requests related to customer bills.  
+
+
+Inheritance diagram for Vehicle\+Insurance\+API.\+Controllers.\+Bill\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.985816cm]{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a521e04a254f7911087c177bd94b10b76}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a521e04a254f7911087c177bd94b10b76} 
+{\bfseries Bill\+Controller} (\mbox{\hyperlink{class_data_access_1_1_models_1_1_vip_db_context}{Vip\+Db\+Context}} db)
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a1d2eb7188210756cd9cc2854dbfcbe4e}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a1d2eb7188210756cd9cc2854dbfcbe4e} 
+async Task$<$ Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer_bill}{Customer\+Bill}} $>$ $>$ $>$ {\bfseries Get\+Customer\+Bills} ()
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a803fa7a5b2ea6911b0671b93e1fa5a8f}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a803fa7a5b2ea6911b0671b93e1fa5a8f} 
+IAction\+Result {\bfseries Bill} (int policy\+No)
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a0c6a065fb7d52bb4c99c61ae751b5a6c}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a0c6a065fb7d52bb4c99c61ae751b5a6c} 
+async Task$<$ IAction\+Result $>$ {\bfseries Put\+Customer\+Bill} (int id, \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer_bill}{Customer\+Bill}} customer\+Bill)
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a9a52ba8ae433e4c32d2ad4b61f1bfba9}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a9a52ba8ae433e4c32d2ad4b61f1bfba9} 
+IAction\+Result {\bfseries Post\+Customer\+Bill} (\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_customer_bill_model}{Customer\+Bill\+Model}} model)
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_aa1d6b4f70445eddeb313fc2fffc66bdb}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_aa1d6b4f70445eddeb313fc2fffc66bdb} 
+async Task$<$ IAction\+Result $>$ {\bfseries Delete\+Customer\+Bill} (int id)
+\item 
+\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a521e04a254f7911087c177bd94b10b76}{Bill\+Controller}} (\mbox{\hyperlink{class_data_access_1_1_models_1_1_vip_db_context}{Vip\+Db\+Context}} db)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller}{Bill\+Controller}. \end{DoxyCompactList}\item 
+async Task$<$ Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer_bill}{Customer\+Bill}} $>$ $>$ $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a1d2eb7188210756cd9cc2854dbfcbe4e}{Get\+Customer\+Bills}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves all customer bills. \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a803fa7a5b2ea6911b0671b93e1fa5a8f}{Bill}} (int policy\+No)
+\begin{DoxyCompactList}\small\item\em Retrieves a specific customer bill based on the policy number and status. \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a0c6a065fb7d52bb4c99c61ae751b5a6c}{Put\+Customer\+Bill}} (int id, \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer_bill}{Customer\+Bill}} customer\+Bill)
+\begin{DoxyCompactList}\small\item\em Updates an existing customer bill. \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a9a52ba8ae433e4c32d2ad4b61f1bfba9}{Post\+Customer\+Bill}} (\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_customer_bill_model}{Customer\+Bill\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Creates a new customer bill. \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_aa1d6b4f70445eddeb313fc2fffc66bdb}{Delete\+Customer\+Bill}} (int id)
+\begin{DoxyCompactList}\small\item\em Deletes a customer bill based on the ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles HTTP requests related to customer bills. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a521e04a254f7911087c177bd94b10b76}\index{VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}!BillController@{BillController}}
+\index{BillController@{BillController}!VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}}
+\doxysubsubsection{\texorpdfstring{BillController()}{BillController()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a521e04a254f7911087c177bd94b10b76} 
+Vehicle\+Insurance\+API.\+Controllers.\+Bill\+Controller.\+Bill\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data_access_1_1_models_1_1_vip_db_context}{Vip\+Db\+Context}}}]{db}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \doxylink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller}{Bill\+Controller}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db} & The database context used to interact with the database. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a803fa7a5b2ea6911b0671b93e1fa5a8f}\index{VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}!Bill@{Bill}}
+\index{Bill@{Bill}!VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}}
+\doxysubsubsection{\texorpdfstring{Bill()}{Bill()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a803fa7a5b2ea6911b0671b93e1fa5a8f} 
+IAction\+Result Vehicle\+Insurance\+API.\+Controllers.\+Bill\+Controller.\+Bill (\begin{DoxyParamCaption}\item[{int}]{policy\+No}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves a specific customer bill based on the policy number and status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em policy\+No} & The policy number of the customer bill. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bill number of the customer bill. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_aa1d6b4f70445eddeb313fc2fffc66bdb}\index{VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}!DeleteCustomerBill@{DeleteCustomerBill}}
+\index{DeleteCustomerBill@{DeleteCustomerBill}!VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}}
+\doxysubsubsection{\texorpdfstring{DeleteCustomerBill()}{DeleteCustomerBill()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_aa1d6b4f70445eddeb313fc2fffc66bdb} 
+async Task$<$ IAction\+Result $>$ Vehicle\+Insurance\+API.\+Controllers.\+Bill\+Controller.\+Delete\+Customer\+Bill (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes a customer bill based on the ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the customer bill to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No content if the deletion is successful. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a1d2eb7188210756cd9cc2854dbfcbe4e}\index{VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}!GetCustomerBills@{GetCustomerBills}}
+\index{GetCustomerBills@{GetCustomerBills}!VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}}
+\doxysubsubsection{\texorpdfstring{GetCustomerBills()}{GetCustomerBills()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a1d2eb7188210756cd9cc2854dbfcbe4e} 
+async Task$<$ Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer_bill}{Customer\+Bill}} $>$ $>$ $>$ Vehicle\+Insurance\+API.\+Controllers.\+Bill\+Controller.\+Get\+Customer\+Bills (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves all customer bills. 
+
+\begin{DoxyReturn}{Returns}
+A list of Customer\+Bill objects. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a9a52ba8ae433e4c32d2ad4b61f1bfba9}\index{VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}!PostCustomerBill@{PostCustomerBill}}
+\index{PostCustomerBill@{PostCustomerBill}!VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}}
+\doxysubsubsection{\texorpdfstring{PostCustomerBill()}{PostCustomerBill()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a9a52ba8ae433e4c32d2ad4b61f1bfba9} 
+IAction\+Result Vehicle\+Insurance\+API.\+Controllers.\+Bill\+Controller.\+Post\+Customer\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_customer_bill_model}{Customer\+Bill\+Model}}}]{model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new customer bill. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The customer bill model to create. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bill number of the created customer bill. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a0c6a065fb7d52bb4c99c61ae751b5a6c}\index{VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}!PutCustomerBill@{PutCustomerBill}}
+\index{PutCustomerBill@{PutCustomerBill}!VehicleInsuranceAPI.Controllers.BillController@{VehicleInsuranceAPI.Controllers.BillController}}
+\doxysubsubsection{\texorpdfstring{PutCustomerBill()}{PutCustomerBill()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_bill_controller_a0c6a065fb7d52bb4c99c61ae751b5a6c} 
+async Task$<$ IAction\+Result $>$ Vehicle\+Insurance\+API.\+Controllers.\+Bill\+Controller.\+Put\+Customer\+Bill (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{\mbox{\hyperlink{class_data_access_1_1_models_1_1_customer_bill}{Customer\+Bill}}}]{customer\+Bill}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates an existing customer bill. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the customer bill to update. \\
+\hline
+{\em customer\+Bill} & The updated customer bill object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No content if the update is successful. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vehicle\+Insurance\+API/\+Controllers/\mbox{\hyperlink{_vehicle_insurance_a_p_i_2_controllers_2_bill_controller_8cs}{Bill\+Controller.\+cs}}\item 
+Vehicle\+Insurance\+API/\+Controllers/Dashboard\+Controller.\+cs\end{DoxyCompactItemize}

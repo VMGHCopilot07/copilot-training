@@ -1,0 +1,89 @@
+﻿@using VehicleInsuranceClient.Models;
+@model List<CertificateModel>
+
+<!-- Title -->
+<h3 class="title">Certificates</h3>
+
+<div class="container border my-4 p-4">
+    <table id="myTable" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Customer Name</th>
+                <th>Policy No.</th>
+                <th>Policy Type</th>
+                <th>Vehicle Info</th>
+                <th>Vehicle Warranty</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (CertificateModel item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Id
+                    </td>
+                    <td>
+                        @item.CustomerName
+                    </td>
+                    <td>
+                        @item.PolicyNo
+                    </td>
+                    <td>
+                        @item.PolicyType
+                    </td>
+                    <td>
+                        @item.VehicleName @item.VehicleModel @item.VehicleVersion
+                    </td>
+                    <td>
+                        @if (item.VehicleWarranty == "Available")
+                        {
+                            <button type="button" class="btn btn-success">@item.VehicleWarranty</button>
+                        }
+                        else if (item.VehicleWarranty == "Pending")
+                        {
+                            <button type="button" class="btn btn-info">@item.VehicleWarranty</button>
+                        }
+                        else if (item.VehicleWarranty == "Not Available")
+                        {
+                            <button type="button" class="btn btn-danger">@item.VehicleWarranty</button>
+                        }
+                    </td>
+                    <td>
+                        <a type="button" class="btn m-2 btn-sm btn-warning" href="@Url.Action("CertificateDetail", "Certificate", new { CertId=item.Id })">Maintain</a>
+                        <a type="button" class="btn m-2 btn-sm btn-info" href="@Url.Action("ClaimDetailById", "Certificate", new { policyNo=item.PolicyNo })">Claims</a>
+                       @* <button type="button" class="btn btn-info">@Html.ActionLink("Claims", "ClaimDetailById", new {  CertId=item.Id  })</button>*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>No.</th>
+                <th>Customer Name</th>
+                <th>Policy No.</th>
+                <th>Policy Type</th>
+                <th>Vehicle Info</th>
+                <th>Vehicle Warranty</th>
+                <th>Action</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<script>
+    $(function () {
+        $('#myTable').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": true,
+            "order": [
+                [0, 'desc']
+            ],
+            "info": true,
+            "autoWidth": false,
+        });
+    }());
+</script>

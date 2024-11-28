@@ -1,0 +1,271 @@
+﻿@using VehicleInsuranceClient.Models
+@{
+    ViewData["Title"] = "Third Party Fire And Theft Car Insurance";
+}
+@model List<PolicyModel>
+<div id="home" class="mb-5">
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-12 col-lg-6 my-5">
+                <h1 class="fw-bolder">
+                    <span>RaCE Third Party Fire and </span> <br />
+                    <span>Theft Car Insurance</span>
+                </h1>
+                <p class="" style="font-weight:bold">
+                    Reliable protection for unintentional damage caused to other people’s property
+                    , as well as if your vehicle gets stolen <br />
+
+                </p>
+            </div>
+        </div>  <!-- End of Row -->
+    </div>  <!-- End of Container -->
+</div>
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" style="float:left; margin-bottom: 0; padding-right: 3rem;">
+                <h2 style="font-weight:bold;">What is Third Party Fire and Theft Car Insurance?</h2>
+                <p>
+                    <!-- Filter Policy by Id-->
+                    @foreach (PolicyModel item in Model.Where(u => u.Id == 1))
+                    {
+                        @item.Description
+                    }
+                </p>
+            </div>
+
+            <div class="col-md-4 bg-warning" style="padding: 2rem">
+                <h4 style="font-weight:bold">Key inclusion:</h4>
+                <p class="">
+                    Hire car for up to 21 days if your vehicle is stolen or can’t be driven after a break-in attempt
+                    . Check the Product Disclosure Statement for full conditions.
+                </p>
+            </div>
+        </div><!-- End of Row -->
+    </div>  <!-- End of Container -->
+</section>  <!-- End of About -->
+
+<partial name="_Reason" />
+
+<!-- Features -->
+<section id="features">
+    <div class="container">
+        <div style="padding: 1.25rem; background:#ccc">
+            <div style="display:flex; justify-content:center; font-weight:bold">
+                <h4>What does Third Party Fire And Theft Car Insurance cover? </h4>
+            </div>
+            <div class="feature-tab" style="display:flex; justify-content:center; font-weight:bold">
+                <input type="radio" id="tab-inclusions" name="feature-tab" checked />
+                <label for="tab-inclusions">Inclusions</label>
+                <div class="tab">
+                    <!-- Filter Policy by Id-->
+                    @foreach (PolicyModel item in Model.Where(u => u.Id == 1))
+                    {
+                        @item.Coverage
+                    }
+                </div>
+                <input type="radio" id="tab-exclusions" name="feature-tab" />
+                <label for="tab-exclusions">Exclusions</label>
+                <div class="tab">
+                    <p>
+                        Cover for repairs to your vehicle where you are at fault in the collision.<br />
+                        Running costs of a hire car, such as petrol or tolls.<br />
+                        Loss or damage to a hire car.<br />
+                        Liability from the use of a hire car.<br />
+                        A hire car arranged by you, unless RACV Insurance approved it beforehand.<br />
+                    </p>
+                </div>
+            </div>
+        </div>  <!-- End of Row -->
+    </div>  <!-- End of Container -->
+</section>  <!-- End of Features -->
+
+<section id="frequentlyasked">
+    <div class="container">
+        <div class="row mt-5">
+            <article>
+                <h2 style="font-weight:bold">
+                    Frequently Asked Questions
+                </h2>
+            </article><!-- End of Article-->
+        </div><!-- End of Row -->
+    </div>  <!-- End of Container -->
+</section>  <!-- End of About -->
+<!-- Frequently asked questions 2-->
+<section id="frequentlyasked2">
+    <div class="o-grid">
+        <div class="canvas-article">
+            <ul id="accordion" style="background-color: #d9dfe2;">
+                <li>
+                    <label for="first">What’s the difference between Comprehensive Car Insurance and Third Party Insurance? <span>&#x3e</span></label>
+                    <input type="radio" name="accordion" id="first" checked />
+                    <div class="answear">
+                        <ul>
+                            <li>
+                                Comprehensive Car Insurance covers collision damage to your car, as well as unintentional collision damage to other people’s property (including vehicles).
+                            </li>
+                            <li>
+                                Third Party Insurance only covers unintentional collision damage to other people’s property (including vehicles). The cost to repair damage to your own car following an incident or accident would be an out of pocket expense.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <label for="two">What is agreed value and market value? <span>&#x3e</span></label>
+                    <input type="radio" name="accordion" id="two" />
+                    <div class="answear">
+                        <ul>
+                            <li>
+                                Market Value is an assessment of the value of the vehicle at the time of the incident based on its age and condition. Because it is not a fixed amount, you won’t know how much compensation you’ll receive if you need to make a claim.
+                            </li>
+                            <li>
+                                Agreed value is the amount you will be reimbursed in the event of a claim where your car is in which your car is declared a total loss and is agreed on by you (the car owner) and the insurer. The agreed value amount is agreed upon by the car owner and their insurer. Because it is a fixed amount, it provides more certainty on what compensation you can expect if your car is considered a write off after an accident.
+                            </li>
+                            <li>
+                                You can only choose between agreed and market value if you purchase a Comprehensive Car Insurance policy.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <label for="three">Does this policy cover anyone who has permission to drive the vehicle? <span>&#x3e</span></label>
+                    <input type="radio" name="accordion" id="three" />
+                    <div class="answear">
+                        <ul>
+                            <li>
+                                Yes, as long as they have a valid driver’s license. Additional excesses may apply for drivers under 25 and inexperienced drivers.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div><!-- End of Row -->
+    </div>  <!-- End of Container -->
+</section>  <!-- End of About -->
+
+<partial name="_LineFooter" />
+
+<style>
+    .feature-tab {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px
+    }
+
+        .feature-tab input[type="radio"] {
+            display: none;
+        }
+
+        .feature-tab label {
+            padding: 25px;
+            background: #e2e2e2;
+            font-weight: bold;
+        }
+
+        .feature-tab .tab {
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+            order: 1;
+            display: none;
+        }
+
+        .feature-tab input[type='radio']:checked + label + .tab {
+            display: block;
+        }
+
+        .feature-tab .tab .first-half {
+            float: left;
+            display: block;
+            margin-right: 1.69%;
+            width: 49.15254%;
+        }
+
+            .feature-tab .tab .first-half .context {
+                list-style-type: none;
+                margin-bottom: 1.875rem;
+                padding: 0;
+                position: relative;
+            }
+
+    li::marker {
+        font-weight: bold;
+        font-size: 150%;
+        color: lightskyblue;
+    }
+
+    label:active {
+        background-color: tomato;
+    }
+
+    labepl::after {
+        content: "";
+        height: 5px;
+        width: 0px;
+        background: tomato;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    labepl:hover::after {
+        width: 50%;
+        transform: translateX(100%);
+    }
+
+    .o-grid {
+        max-width: 1360px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 0.9375rem;
+    }
+
+    .canvas-article {
+        padding: 1.25rem;
+    }
+
+    #accordion li {
+        list-style: none;
+        width: 100%;
+        margin-bottom: 10px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+        #accordion li label {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            color: #c20000;
+        }
+
+            #accordion li label span {
+                transform: rotate(90deg);
+                font-size: 22px;
+                color: #333;
+            }
+
+    #accordion label + input[type="radio"] {
+        display: none;
+    }
+
+    #accordion .answear {
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    #accordion label + input[type="radio"]:checked + .answear {
+        max-height: 400px;
+    }
+</style>

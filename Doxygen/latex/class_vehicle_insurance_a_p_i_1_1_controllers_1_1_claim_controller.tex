@@ -1,0 +1,106 @@
+\doxysection{Vehicle\+Insurance\+API.\+Controllers.\+Claim\+Controller Class Reference}
+\hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller}{}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller}\index{VehicleInsuranceAPI.Controllers.ClaimController@{VehicleInsuranceAPI.Controllers.ClaimController}}
+Inheritance diagram for Vehicle\+Insurance\+API.\+Controllers.\+Claim\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_a3a5275d6f31bf614f49d504f03416fc4}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_a3a5275d6f31bf614f49d504f03416fc4} 
+{\bfseries Claim\+Controller} (\mbox{\hyperlink{class_data_access_1_1_models_1_1_vip_db_context}{Vip\+Db\+Context}} db, \mbox{\hyperlink{interface_vehicle_insurance_a_p_i_1_1_i_responsitory_1_1_i_customer}{ICustomer}} \+\_\+service)
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_a673fe40c2d00dc9c497fc383239ba0fe}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_a673fe40c2d00dc9c497fc383239ba0fe} 
+async Task$<$ Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_claim}{Claim}} $>$ $>$ $>$ {\bfseries Get\+Claims} ()
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_afef58bb429857d33ee6ccdf205bbcb2f}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_afef58bb429857d33ee6ccdf205bbcb2f} 
+IAction\+Result {\bfseries Get\+Claim} (int id)
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_abb06d2533f1876e91dd9d893c18fe87a}\label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_abb06d2533f1876e91dd9d893c18fe87a} 
+async Task$<$ IAction\+Result $>$ {\bfseries Create\+Claim} (\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_create_claim_dto}{Create\+Claim\+Dto}} create\+Claim\+Dto)
+\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_a104a96067a3e49979a976603412c20a5}{Get\+Claims\+Admin}} ()
+\begin{DoxyCompactList}\small\item\em Get Claims -\/ Admin page. \end{DoxyCompactList}\item 
+async Task$<$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_claim_view_model}{Claim\+View\+Model}} $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_ada51f8725adcbc0bd216fcf4d6dcb5ab}{Get\+Detail}} (int claim\+No)
+\begin{DoxyCompactList}\small\item\em Claim\textquotesingle{}s details -\/ Admin page. \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_ad70752e81ff8d6c445a6e5ca2e70cd56}{My\+Claims}} (int id, int policy\+No)
+\begin{DoxyCompactList}\small\item\em My Claims -\/ Customer page. \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_a7eefc789395ac4cb94d5498924b9e0dc}{Update\+Claim}} (\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_claim_view_model}{Claim\+View\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Update claim -\/ Admin page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_a104a96067a3e49979a976603412c20a5}\index{VehicleInsuranceAPI.Controllers.ClaimController@{VehicleInsuranceAPI.Controllers.ClaimController}!GetClaimsAdmin@{GetClaimsAdmin}}
+\index{GetClaimsAdmin@{GetClaimsAdmin}!VehicleInsuranceAPI.Controllers.ClaimController@{VehicleInsuranceAPI.Controllers.ClaimController}}
+\doxysubsubsection{\texorpdfstring{GetClaimsAdmin()}{GetClaimsAdmin()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_a104a96067a3e49979a976603412c20a5} 
+IAction\+Result Vehicle\+Insurance\+API.\+Controllers.\+Claim\+Controller.\+Get\+Claims\+Admin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Claims -\/ Admin page. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_ada51f8725adcbc0bd216fcf4d6dcb5ab}\index{VehicleInsuranceAPI.Controllers.ClaimController@{VehicleInsuranceAPI.Controllers.ClaimController}!GetDetail@{GetDetail}}
+\index{GetDetail@{GetDetail}!VehicleInsuranceAPI.Controllers.ClaimController@{VehicleInsuranceAPI.Controllers.ClaimController}}
+\doxysubsubsection{\texorpdfstring{GetDetail()}{GetDetail()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_ada51f8725adcbc0bd216fcf4d6dcb5ab} 
+async Task$<$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_claim_view_model}{Claim\+View\+Model}} $>$ Vehicle\+Insurance\+API.\+Controllers.\+Claim\+Controller.\+Get\+Detail (\begin{DoxyParamCaption}\item[{int}]{claim\+No}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Claim\textquotesingle{}s details -\/ Admin page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em claim\+No} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_ad70752e81ff8d6c445a6e5ca2e70cd56}\index{VehicleInsuranceAPI.Controllers.ClaimController@{VehicleInsuranceAPI.Controllers.ClaimController}!MyClaims@{MyClaims}}
+\index{MyClaims@{MyClaims}!VehicleInsuranceAPI.Controllers.ClaimController@{VehicleInsuranceAPI.Controllers.ClaimController}}
+\doxysubsubsection{\texorpdfstring{MyClaims()}{MyClaims()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_ad70752e81ff8d6c445a6e5ca2e70cd56} 
+IAction\+Result Vehicle\+Insurance\+API.\+Controllers.\+Claim\+Controller.\+My\+Claims (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{int}]{policy\+No}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+My Claims -\/ Customer page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em claim\+No} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_a7eefc789395ac4cb94d5498924b9e0dc}\index{VehicleInsuranceAPI.Controllers.ClaimController@{VehicleInsuranceAPI.Controllers.ClaimController}!UpdateClaim@{UpdateClaim}}
+\index{UpdateClaim@{UpdateClaim}!VehicleInsuranceAPI.Controllers.ClaimController@{VehicleInsuranceAPI.Controllers.ClaimController}}
+\doxysubsubsection{\texorpdfstring{UpdateClaim()}{UpdateClaim()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_controllers_1_1_claim_controller_a7eefc789395ac4cb94d5498924b9e0dc} 
+async Task$<$ IAction\+Result $>$ Vehicle\+Insurance\+API.\+Controllers.\+Claim\+Controller.\+Update\+Claim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_claim_view_model}{Claim\+View\+Model}}}]{model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update claim -\/ Admin page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vehicle\+Insurance\+API/\+Controllers/Claim\+Controller.\+cs\end{DoxyCompactItemize}

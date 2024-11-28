@@ -1,0 +1,92 @@
+\doxysection{Vehicle\+Insurance\+Client.\+Controllers.\+Certificate\+Controller Class Reference}
+\hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller}{}\label{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller}\index{VehicleInsuranceClient.Controllers.CertificateController@{VehicleInsuranceClient.Controllers.CertificateController}}
+Inheritance diagram for Vehicle\+Insurance\+Client.\+Controllers.\+Certificate\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a828a1c29d269eeae1c60c6e6ada03833}\label{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a828a1c29d269eeae1c60c6e6ada03833} 
+{\bfseries Certificate\+Controller} (IWeb\+Host\+Environment env)
+\item 
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a0dccad36c3d85a39b120a99a479dd266}\label{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a0dccad36c3d85a39b120a99a479dd266} 
+IAction\+Result {\bfseries Index} ()
+\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a3bee5c0fb2598b937a4dcf2381cbfcf5}{Get\+Certificates}} (\mbox{[}From\+Body\mbox{]} List$<$ \mbox{\hyperlink{class_vehicle_insurance_client_1_1_models_1_1_certificate_model}{Certificate\+Model}} $>$ model)
+\begin{DoxyCompactList}\small\item\em Create view for List\+Certificates. \end{DoxyCompactList}\item 
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_acc347132005872a7ac2af30764693e18}\label{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_acc347132005872a7ac2af30764693e18} 
+IAction\+Result {\bfseries Details} (int id)
+\item 
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a07fcad31946a6295ad3a22a12cbbd54d}\label{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a07fcad31946a6295ad3a22a12cbbd54d} 
+IAction\+Result {\bfseries Print} (int id)
+\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_adac1694c73a78744e723f1b5c21be49e}{Contract}} (string estimate\+No)
+\begin{DoxyCompactList}\small\item\em Create View for customer fill-\/in the Contract. \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a08251d699d4109209c51bbbe9bff8c9c}{Contract}} (\mbox{\hyperlink{class_vehicle_insurance_client_1_1_models_1_1_contract_model}{Contract\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Create Certificate after customer submit Contract form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a64d48ef4b5a9bda5ec7150a2610cdfd1}\label{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a64d48ef4b5a9bda5ec7150a2610cdfd1} 
+static List$<$ \mbox{\hyperlink{class_vehicle_insurance_client_1_1_models_1_1_certificate_model}{Certificate\+Model}} $>$ {\bfseries Certificates} = new List$<$\mbox{\hyperlink{class_vehicle_insurance_client_1_1_models_1_1_certificate_model}{Certificate\+Model}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a08251d699d4109209c51bbbe9bff8c9c}\index{VehicleInsuranceClient.Controllers.CertificateController@{VehicleInsuranceClient.Controllers.CertificateController}!Contract@{Contract}}
+\index{Contract@{Contract}!VehicleInsuranceClient.Controllers.CertificateController@{VehicleInsuranceClient.Controllers.CertificateController}}
+\doxysubsubsection{\texorpdfstring{Contract()}{Contract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a08251d699d4109209c51bbbe9bff8c9c} 
+IAction\+Result Vehicle\+Insurance\+Client.\+Controllers.\+Certificate\+Controller.\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vehicle_insurance_client_1_1_models_1_1_contract_model}{Contract\+Model}}}]{model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create Certificate after customer submit Contract form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Contract\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Certificates of a customer
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_adac1694c73a78744e723f1b5c21be49e}\index{VehicleInsuranceClient.Controllers.CertificateController@{VehicleInsuranceClient.Controllers.CertificateController}!Contract@{Contract}}
+\index{Contract@{Contract}!VehicleInsuranceClient.Controllers.CertificateController@{VehicleInsuranceClient.Controllers.CertificateController}}
+\doxysubsubsection{\texorpdfstring{Contract()}{Contract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_adac1694c73a78744e723f1b5c21be49e} 
+IAction\+Result Vehicle\+Insurance\+Client.\+Controllers.\+Certificate\+Controller.\+Contract (\begin{DoxyParamCaption}\item[{string}]{estimate\+No}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create View for customer fill-\/in the Contract. 
+
+\begin{DoxyReturn}{Returns}
+Contract View
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a3bee5c0fb2598b937a4dcf2381cbfcf5}\index{VehicleInsuranceClient.Controllers.CertificateController@{VehicleInsuranceClient.Controllers.CertificateController}!GetCertificates@{GetCertificates}}
+\index{GetCertificates@{GetCertificates}!VehicleInsuranceClient.Controllers.CertificateController@{VehicleInsuranceClient.Controllers.CertificateController}}
+\doxysubsubsection{\texorpdfstring{GetCertificates()}{GetCertificates()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_client_1_1_controllers_1_1_certificate_controller_a3bee5c0fb2598b937a4dcf2381cbfcf5} 
+IAction\+Result Vehicle\+Insurance\+Client.\+Controllers.\+Certificate\+Controller.\+Get\+Certificates (\begin{DoxyParamCaption}\item[{\mbox{[}\+From\+Body\mbox{]} List$<$ \mbox{\hyperlink{class_vehicle_insurance_client_1_1_models_1_1_certificate_model}{Certificate\+Model}} $>$}]{model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create view for List\+Certificates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vehicle\+Insurance\+Client/\+Controllers/Certificate\+Controller.\+cs\end{DoxyCompactItemize}

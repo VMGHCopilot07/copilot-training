@@ -1,0 +1,128 @@
+\doxysection{Vehicle\+Insurance\+API.\+Responsitory.\+Customer\+Service Class Reference}
+\hypertarget{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service}{}\label{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service}\index{VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}}
+Inheritance diagram for Vehicle\+Insurance\+API.\+Responsitory.\+Customer\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a56cb801f1d6b62776f3e02181ee75244}\label{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a56cb801f1d6b62776f3e02181ee75244} 
+{\bfseries Customer\+Service} (\mbox{\hyperlink{class_data_access_1_1_models_1_1_vip_db_context}{Vip\+Db\+Context}} db)
+\item 
+async Task$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer}{Customer}} $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_ac7750d3087c174d11cf5b6f895224a7a}{Check\+Login}} (string customeremail, string password)
+\item 
+async Task$<$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_customer_dto}{Customer\+Dto}} $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a3e74c27dc2a7daa733de6da9c64893f7}{Login}} (\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_login_dto}{Login\+Dto}} req)
+\item 
+async Task$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer}{Customer}} $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a4df3c9a42aab5a3afdcd48ffcca7b4aa}{Sign\+Up\+Customer}} (\mbox{\hyperlink{class_data_access_1_1_models_1_1_customer}{Customer}} obj\+Customer)
+\begin{DoxyCompactList}\small\item\em Register new account. \end{DoxyCompactList}\item 
+async Task$<$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_create_claim_dto}{Create\+Claim\+Dto}} $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a97523e39bd4cd28d2c1a8ced6cf32cc3}{Create\+Claim\+Customer}} (\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_create_claim_dto}{Create\+Claim\+Dto}} obj\+Create\+Claim)
+\begin{DoxyCompactList}\small\item\em create form Claim \end{DoxyCompactList}\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_ac99774fa7fa3a286533f6707ad34ba2e}\label{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_ac99774fa7fa3a286533f6707ad34ba2e} 
+int {\bfseries Generate\+Number} ()
+\item 
+async Task$<$ List$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer}{Customer}} $>$ $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_adbd2ceb308e87454d75cde08ec46af06}{Get\+One\+By\+Id}} (int customer\+Id)
+\item 
+async Task$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer}{Customer}} $>$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a4d56d8e83661dd7a99161c38fb58ce23}{Change\+Password}} (\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_change_password_dto}{Change\+Password\+Dto}} change\+Password\+Dto)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_vehicle_insurance_a_p_i_1_1_i_responsitory_1_1_i_customer}{Vehicle\+Insurance\+API.\+IResponsitory.\+ICustomer}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a12b094c95aee38e7e358c156f434bdbb}\label{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a12b094c95aee38e7e358c156f434bdbb} 
+readonly \mbox{\hyperlink{class_data_access_1_1_models_1_1_vip_db_context}{Vip\+Db\+Context}} {\bfseries db}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a4d56d8e83661dd7a99161c38fb58ce23}\index{VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}!ChangePassword@{ChangePassword}}
+\index{ChangePassword@{ChangePassword}!VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}}
+\doxysubsubsection{\texorpdfstring{ChangePassword()}{ChangePassword()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a4d56d8e83661dd7a99161c38fb58ce23} 
+async Task$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer}{Customer}} $>$ Vehicle\+Insurance\+API.\+Responsitory.\+Customer\+Service.\+Change\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_change_password_dto}{Change\+Password\+Dto}}}]{change\+Password\+Dto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_vehicle_insurance_a_p_i_1_1_i_responsitory_1_1_i_customer}{Vehicle\+Insurance\+API.\+IResponsitory.\+ICustomer}}.
+
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_ac7750d3087c174d11cf5b6f895224a7a}\index{VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}!CheckLogin@{CheckLogin}}
+\index{CheckLogin@{CheckLogin}!VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}}
+\doxysubsubsection{\texorpdfstring{CheckLogin()}{CheckLogin()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_ac7750d3087c174d11cf5b6f895224a7a} 
+async Task$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer}{Customer}} $>$ Vehicle\+Insurance\+API.\+Responsitory.\+Customer\+Service.\+Check\+Login (\begin{DoxyParamCaption}\item[{string}]{customeremail}{, }\item[{string}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_vehicle_insurance_a_p_i_1_1_i_responsitory_1_1_i_customer}{Vehicle\+Insurance\+API.\+IResponsitory.\+ICustomer}}.
+
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a97523e39bd4cd28d2c1a8ced6cf32cc3}\index{VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}!CreateClaimCustomer@{CreateClaimCustomer}}
+\index{CreateClaimCustomer@{CreateClaimCustomer}!VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}}
+\doxysubsubsection{\texorpdfstring{CreateClaimCustomer()}{CreateClaimCustomer()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a97523e39bd4cd28d2c1a8ced6cf32cc3} 
+async Task$<$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_create_claim_dto}{Create\+Claim\+Dto}} $>$ Vehicle\+Insurance\+API.\+Responsitory.\+Customer\+Service.\+Create\+Claim\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_create_claim_dto}{Create\+Claim\+Dto}}}]{obj\+Create\+Claim}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+create form Claim 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Claim} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_vehicle_insurance_a_p_i_1_1_i_responsitory_1_1_i_customer}{Vehicle\+Insurance\+API.\+IResponsitory.\+ICustomer}}.
+
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_adbd2ceb308e87454d75cde08ec46af06}\index{VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}!GetOneById@{GetOneById}}
+\index{GetOneById@{GetOneById}!VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}}
+\doxysubsubsection{\texorpdfstring{GetOneById()}{GetOneById()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_adbd2ceb308e87454d75cde08ec46af06} 
+async Task$<$ List$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer}{Customer}} $>$ $>$ Vehicle\+Insurance\+API.\+Responsitory.\+Customer\+Service.\+Get\+One\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{customer\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_vehicle_insurance_a_p_i_1_1_i_responsitory_1_1_i_customer}{Vehicle\+Insurance\+API.\+IResponsitory.\+ICustomer}}.
+
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a3e74c27dc2a7daa733de6da9c64893f7}\index{VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}!Login@{Login}}
+\index{Login@{Login}!VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a3e74c27dc2a7daa733de6da9c64893f7} 
+async Task$<$ \mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_customer_dto}{Customer\+Dto}} $>$ Vehicle\+Insurance\+API.\+Responsitory.\+Customer\+Service.\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vehicle_insurance_a_p_i_1_1_models_1_1_dtos_1_1_login_dto}{Login\+Dto}}}]{req}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_vehicle_insurance_a_p_i_1_1_i_responsitory_1_1_i_customer}{Vehicle\+Insurance\+API.\+IResponsitory.\+ICustomer}}.
+
+\Hypertarget{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a4df3c9a42aab5a3afdcd48ffcca7b4aa}\index{VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}!SignUpCustomer@{SignUpCustomer}}
+\index{SignUpCustomer@{SignUpCustomer}!VehicleInsuranceAPI.Responsitory.CustomerService@{VehicleInsuranceAPI.Responsitory.CustomerService}}
+\doxysubsubsection{\texorpdfstring{SignUpCustomer()}{SignUpCustomer()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_a_p_i_1_1_responsitory_1_1_customer_service_a4df3c9a42aab5a3afdcd48ffcca7b4aa} 
+async Task$<$ \mbox{\hyperlink{class_data_access_1_1_models_1_1_customer}{Customer}} $>$ Vehicle\+Insurance\+API.\+Responsitory.\+Customer\+Service.\+Sign\+Up\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data_access_1_1_models_1_1_customer}{Customer}}}]{obj\+Customer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Register new account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Customer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_vehicle_insurance_a_p_i_1_1_i_responsitory_1_1_i_customer}{Vehicle\+Insurance\+API.\+IResponsitory.\+ICustomer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vehicle\+Insurance\+API/\+Responsitory/Customer\+Service.\+cs\end{DoxyCompactItemize}

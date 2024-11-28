@@ -1,0 +1,55 @@
+\doxysection{Vehicle\+Insurance\+Client.\+Controllers.\+Payment\+Controller Class Reference}
+\hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller}{}\label{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller}\index{VehicleInsuranceClient.Controllers.PaymentController@{VehicleInsuranceClient.Controllers.PaymentController}}
+Inheritance diagram for Vehicle\+Insurance\+Client.\+Controllers.\+Payment\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IAction\+Result \mbox{\hyperlink{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller_a86b64b1fb4db11ae6c2f8700249c20d0}{Pay\+Later}} (\mbox{[}From\+Form\mbox{]} int Policy\+No, \mbox{[}From\+Form\mbox{]} decimal Premium)
+\begin{DoxyCompactList}\small\item\em Pay the bill for employee later by cash. \end{DoxyCompactList}\item 
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller_acfd122ad2b4c2ee1c509a304586070b9}\label{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller_acfd122ad2b4c2ee1c509a304586070b9} 
+IAction\+Result {\bfseries Checkout\+Fail} ()
+\item 
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller_a46078a58e9c88a612bda21dfe889b077}\label{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller_a46078a58e9c88a612bda21dfe889b077} 
+IAction\+Result {\bfseries Checkout\+Success} ()
+\item 
+int \mbox{\hyperlink{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller_a3ed778634d976b35a1cf11b107852a7f}{Generate\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Generate unique 9 digits number used for Policy Number/ Bill Number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller_a3ed778634d976b35a1cf11b107852a7f}\index{VehicleInsuranceClient.Controllers.PaymentController@{VehicleInsuranceClient.Controllers.PaymentController}!GenerateNumber@{GenerateNumber}}
+\index{GenerateNumber@{GenerateNumber}!VehicleInsuranceClient.Controllers.PaymentController@{VehicleInsuranceClient.Controllers.PaymentController}}
+\doxysubsubsection{\texorpdfstring{GenerateNumber()}{GenerateNumber()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller_a3ed778634d976b35a1cf11b107852a7f} 
+int Vehicle\+Insurance\+Client.\+Controllers.\+Payment\+Controller.\+Generate\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate unique 9 digits number used for Policy Number/ Bill Number. 
+
+\begin{DoxyReturn}{Returns}
+Policy number
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller_a86b64b1fb4db11ae6c2f8700249c20d0}\index{VehicleInsuranceClient.Controllers.PaymentController@{VehicleInsuranceClient.Controllers.PaymentController}!PayLater@{PayLater}}
+\index{PayLater@{PayLater}!VehicleInsuranceClient.Controllers.PaymentController@{VehicleInsuranceClient.Controllers.PaymentController}}
+\doxysubsubsection{\texorpdfstring{PayLater()}{PayLater()}}
+{\footnotesize\ttfamily \label{class_vehicle_insurance_client_1_1_controllers_1_1_payment_controller_a86b64b1fb4db11ae6c2f8700249c20d0} 
+IAction\+Result Vehicle\+Insurance\+Client.\+Controllers.\+Payment\+Controller.\+Pay\+Later (\begin{DoxyParamCaption}\item[{\mbox{[}\+From\+Form\mbox{]} int}]{Policy\+No}{, }\item[{\mbox{[}\+From\+Form\mbox{]} decimal}]{Premium}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pay the bill for employee later by cash. 
+
+\begin{DoxyReturn}{Returns}
+Customer\+Bill View
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vehicle\+Insurance\+Client/\+Controllers/Payment\+Controller.\+cs\end{DoxyCompactItemize}
